@@ -1,18 +1,14 @@
 import express from 'express';
-
+import { AddItem, Items, RemoveItem, UpdateItem } from '../contollers/todo.controller.js';
 
 const router = express.Router();
-router.get('/', (req, res)=>{
-    res.status(200).send("You are seeing HomePage");
-});
+router.get('/items', Items);
 
-router.post("/add", (req, res)=>{
-    res.status(200).send("Todo added successfully");
-});
+router.post("/add",AddItem);
 
-router.put("/update", (req, res)=>{
-    res.status(200).send("Todo updated successfully");
-});
+router.put("/remove", RemoveItem);
+
+router.put("/update", UpdateItem);
 
 
 export default router;
