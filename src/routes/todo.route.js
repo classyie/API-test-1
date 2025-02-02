@@ -6,7 +6,7 @@ router.get('/items', Items);
 
 router.post("/add",AddItem);
 
-router.put("/remove", RemoveItem);
+router.delete("/remove", RemoveItem);
 
 router.put("/update", UpdateItem);
 
