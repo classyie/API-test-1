@@ -32,10 +32,20 @@ export const RemoveItem = async (req, res) => {
         return res.status(400).json({ error: "Id is required" });
     }
     await Items.findByIdAndDelete(_id);
-    
+
     res.status(200).send("Removed");
 }
 
-export const UpdateItem = (req, res) => {
-    res.status(200).send("Updated");
+export const UpdateItem = async (req, res) => {
+    const { _id, item } = req.body;
+
+    if (!_id || !item) {
+        return res.status(400).json(`Error : Id and Item are required`);
+    }
+    try {
+        const updatedItem = await Items.findByIdAndUpdate(_id, { item }, { new: true });
+        res.status(200).send(updatedItem);
+    } catch (error) {
+        console.error(`❌ Error: ${error.message}`);
+    }
 }
