@@ -1,8 +1,8 @@
 import express from 'express';
-import { AddItem, Items, RemoveItem, UpdateItem } from '../contollers/todo.controller.js';
+import { AddItem, getItems, RemoveItem, UpdateItem } from '../contollers/todo.controller.js';
 
 const router = express.Router();
-router.get('/items', Items);
+router.get('/items', getItems);
 
 router.post("/add",AddItem);
 
