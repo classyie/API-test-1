@@ -2,7 +2,7 @@ Here’s a **README.md** file for setting up your API:
 
 ---
 
-# 📌 **ITEMSems API**
+# 📌 **ITEMS API**
 
 This is a simple TODO API built using **Node.js**, **Express**, and **MongoDB**.
 
