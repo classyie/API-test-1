@@ -4,11 +4,11 @@ Here’s a **README.md** file for setting up your API:
 
 # 📌 **ITEMS API**
 
-This is a simple TODO API built using **Node.js**, **Express**, and **MongoDB**.
+This is a simple API built using **Node.js**, **Express**, and **MongoDB**.
 
 ## 🚀 **Features**
 
-- ✅ Add, Update, Delete, and Retrieve TODO items.
+- ✅ Add, Update, Delete, and Retrieve items.
 - ✅ Uses **MongoDB Atlas** as the database.
 - ✅ Simple and easy-to-use REST API.
 
