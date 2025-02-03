@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 // app.use(bodyParser.json());
 
-app.use("/api/todo", todoRoute);
+app.use("/api", todoRoute);
 
 app.listen(PORT, ()=>{
     console.log(`Server is running on port ${PORT}`);
