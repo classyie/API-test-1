@@ -26,7 +26,13 @@ export const AddItem = async (req, res) => {
     }
 };
 
-export const RemoveItem = (req, res) => {
+export const RemoveItem = async (req, res) => {
+    const { _id } = req.body;
+    if (!_id) {
+        return res.status(400).json({ error: "Id is required" });
+    }
+    await Items.findByIdAndDelete(_id);
+    
     res.status(200).send("Removed");
 }
 
