@@ -133,5 +133,3 @@ The server will start on **`http://localhost:5001`**.
 For issues, create a GitHub issue at [API-test-1 Issues](https://github.com/classyie/API-test-1/issues).
 
 ---
-
-This **README.md** will help users set up and use your API quickly. 🚀 Let me know if you want modifications! 😊
